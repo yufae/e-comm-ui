@@ -1,16 +1,133 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap");
 
 a {
   color: inherit;
   text-decoration: none;
 }
 
+a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  scroll-behavior: smooth;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+div,
+li,
+a,
+button,
+input {
+  font-family: "Poppins", sans-serif;
+  color: #333333;
+}
+
+/*Homepage Top Swiper */
+.homePageTopSwiper .swiper-button-prev,
+.swiper-button-next {
+  top: 42% !important;
+}
+
+.homePageTopSwiper .swiper-button-prev:after,
+.swiper-button-next:after {
+  font-weight: 900 !important;
+  font-size: 29px !important;
+  color: black !important;
+}
+
+.homePageTopSwiper .swiper-pagination-bullets {
+  bottom: 0px !important;
+}
+.homePageTopSwiper .swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  opacity: 1;
+  border: 1px solid #333333;
+  background: white;
+  margin: 0 7.5px !important;
+}
+
+.homePageTopSwiper .swiper-pagination-bullet-active {
+  background: #333333;
+}
+
+/*Homepage Bottom Swiper */
+.homePageBottomSwiper {
+  position: unset !important;
+}
+
+.homePageBottomSwiper .swiper-button-prev {
+  left: -42px;
+}
+
+.homePageBottomSwiper .swiper-button-next {
+  right: -42px;
+}
+
+.homePageBottomSwiper .swiper-button-prev,
+.swiper-button-next {
+  top: 37% !important;
+}
+
+.homePageBottomSwiper .swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 29px !important;
+  color: black !important;
+  font-weight: 900 !important;
+}
+
+.homePageBottomSwiper .swiper-pagination-bullets {
+  bottom: 0px !important;
+}
+.homePageBottomSwiper .swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  opacity: 1;
+  border: 1px solid #333333;
+  background: white;
+  margin: 0 7.5px !important;
+}
+
+.homePageBottomSwiper .swiper-pagination-bullet-active {
+  background: #333333;
+}
+
+/* Navbar Popup Right */
+
+.navbarPopup.ui.bottom.popup {
+  margin-top: 17px;
+  box-shadow: none;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+}
+
+.navbarPopup::before {
+  display: none;
 }
