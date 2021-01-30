@@ -1,6 +1,5 @@
-import React from 'react'
 import styles from '../styles/HomePageBottomBanner.module.css'
-
+import Image from 'next/image'
 
 export default function HomePageBottomBanner() {
     return (
@@ -11,7 +10,7 @@ export default function HomePageBottomBanner() {
                     <p className={styles.banner1Desc}>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
                     <button className={styles.banner1Btn}><p>TÜMÜNÜ GÖR</p></button>
                 </div>
-                <img src="/homepagebanner1Img.svg" alt="homepagebanner1Img" />
+                <Image width={600} height={500} src="/homepagebanner1Img.svg" alt="homepagebanner1Img" />
             </div>
 
             <div className={styles.banner2}>
@@ -20,7 +19,7 @@ export default function HomePageBottomBanner() {
                     <p className={styles.banner2Discount}>İndirimli</p>
                     <p className={styles.banner2Product}>Tarhana</p>
                 </div>
-                <img src="/homepagebanner2Img.svg" alt="homepagebanner2Img" />
+                <Image width={1200} height={300} src="/homepagebanner2Img.svg" alt="homepagebanner2Img" />
             </div>
             <div className={styles.banner2}>
                 <div className={styles.banner2Texts}>
@@ -28,7 +27,7 @@ export default function HomePageBottomBanner() {
                     <p className={styles.banner2Discount}>Lorem</p>
                     <p className={styles.banner2Product}>Ipsum</p>
                 </div>
-                <img src="/homepagebanner3Img.svg" alt="homepagebanner3Img" />
+                <Image width={1200} height={300} src="/homepagebanner3Img.svg" alt="homepagebanner3Img" />
             </div>
             <div className={styles.banner2}>
                 <div className={styles.banner2Texts}>
@@ -36,7 +35,7 @@ export default function HomePageBottomBanner() {
                     <p className={styles.banner2Discount}>İndirimli</p>
                     <p className={styles.banner2Product}>Tarhana</p>
                 </div>
-                <img src="/homepagebanner2Img.svg" alt="homepagebanner2Img" />
+                <Image width={1200} height={300} src="/homepagebanner2Img.svg" alt="homepagebanner2Img" />
             </div>
             <div className={styles.banner2}>
                 <div className={styles.banner2Texts}>
@@ -44,7 +43,7 @@ export default function HomePageBottomBanner() {
                     <p className={styles.banner2Discount}>Lorem</p>
                     <p className={styles.banner2Product}>Ipsum</p>
                 </div>
-                <img src="/homepagebanner3Img.svg" alt="homepagebanner3Img" />
+                <Image width={1200} height={300} src="/homepagebanner3Img.svg" alt="homepagebanner3Img" />
             </div>
 
         </div>

@@ -2,6 +2,7 @@ import React from 'react'
 import styles from '../styles/HomePageBottomSlider.module.css'
 // import homePageTopSliderImg from "/homepagetopsliderImg.svg"
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import Image from 'next/image'
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -23,10 +24,13 @@ export default function HomePageBottomSlider() {
             >
                 <SwiperSlide>
                     <div className={styles.sliderBox}>
-                        <img
-                            src="/homepagebottomsliderImg.svg"
-                            alt="homepagebottomsliderImg"
-                        />
+                        <div className={styles.sliderBoxImgContainer}>
+                            <Image
+                                layout='fill'
+                                src="/homepagebottomsliderImg.svg"
+                                alt="homepagebottomsliderImg"
+                            />
+                        </div>
                         <div className={styles.sliderTexts}>
                             <p className={styles.mainTitle}>Beyorganik</p>
                             <p className={styles.subTitle}>Organik Pilavlık Bulgur Köy Tipi</p>
@@ -37,10 +41,13 @@ export default function HomePageBottomSlider() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className={styles.sliderBox}>
-                        <img
-                            src="/homepagebottomsliderImg2.svg"
-                            alt="homepagebottomsliderImg2"
-                        />
+                        <div className={styles.sliderBoxImgContainer}>
+                            <Image
+                                layout='fill'
+                                src="/homepagebottomsliderImg2.svg"
+                                alt="homepagebottomsliderImg2"
+                            />
+                        </div>
                         <div className={styles.sliderTexts}>
                             <p className={styles.mainTitle}>Beyorganik</p>
                             <p className={styles.subTitle}>Organik Sarı Mercimek</p>
@@ -51,10 +58,13 @@ export default function HomePageBottomSlider() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className={styles.sliderBox}>
-                        <img
-                            src="/homepagebottomsliderImg3.svg"
-                            alt="homepagebottomsliderImg3"
-                        />
+                        <div className={styles.sliderBoxImgContainer}>
+                            <Image
+                                layout='fill'
+                                src="/homepagebottomsliderImg3.svg"
+                                alt="homepagebottomsliderImg3"
+                            />
+                        </div>
                         <div className={styles.sliderTexts}>
                             <p className={styles.mainTitle}>Beyorganik</p>
                             <p className={styles.subTitle}>Organik Börülce</p>
@@ -65,10 +75,13 @@ export default function HomePageBottomSlider() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className={styles.sliderBox}>
-                        <img
-                            src="/homepagebottomsliderImg.svg"
-                            alt="homepagebottomsliderImg"
-                        />
+                        <div className={styles.sliderBoxImgContainer}>
+                            <Image
+                                layout='fill'
+                                src="/homepagebottomsliderImg.svg"
+                                alt="homepagebottomsliderImg"
+                            />
+                        </div>
                         <div className={styles.sliderTexts}>
                             <p className={styles.mainTitle}>Beyorganik</p>
                             <p className={styles.subTitle}>Organik Pilavlık Bulgur Köy Tipi</p>
@@ -79,10 +92,13 @@ export default function HomePageBottomSlider() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className={styles.sliderBox}>
-                        <img
-                            src="/homepagebottomsliderImg.svg"
-                            alt="homepagebottomsliderImg"
-                        />
+                        <div className={styles.sliderBoxImgContainer}>
+                            <Image
+                                layout='fill'
+                                src="/homepagebottomsliderImg2.svg"
+                                alt="homepagebottomsliderImg2"
+                            />
+                        </div>
                         <div className={styles.sliderTexts}>
                             <p className={styles.mainTitle}>Beyorganik</p>
                             <p className={styles.subTitle}>Organik Pilavlık Bulgur Köy Tipi</p>
@@ -93,10 +109,13 @@ export default function HomePageBottomSlider() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className={styles.sliderBox}>
-                        <img
-                            src="/homepagebottomsliderImg.svg"
-                            alt="homepagebottomsliderImg"
-                        />
+                        <div className={styles.sliderBoxImgContainer}>
+                            <Image
+                                layout='fill'
+                                src="/homepagebottomsliderImg3.svg"
+                                alt="homepagebottomsliderImg3"
+                            />
+                        </div>
                         <div className={styles.sliderTexts}>
                             <p className={styles.mainTitle}>Beyorganik</p>
                             <p className={styles.subTitle}>Organik Pilavlık Bulgur Köy Tipi</p>

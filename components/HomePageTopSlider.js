@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from '../styles/HomePageTopSlider.module.css'
-// import homePageTopSliderImg from "/homepagetopsliderImg.svg"
+import Image from 'next/image'
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -22,10 +22,13 @@ export default function HomePageTopSlider() {
             >
                 <SwiperSlide>
                     <div className={styles.sliderBox}>
-                        <img
-                            src="/homepagetopsliderImg.svg"
-                            alt="homepagetopsliderImg"
-                        />
+                        <div className={styles.sliderBoxImgContainer}>
+                            <Image
+                                layout="fill"
+                                src="/homepagetopsliderImg.svg"
+                                alt="homepagetopsliderImg"
+                            />
+                        </div>
                         <div className={styles.sliderTexts}>
                             <p className={styles.mainTitle}>Lorem Ipsum dolor</p>
                             <p className={styles.subTitle}>Lorem Ipsum dolor</p>
@@ -36,10 +39,14 @@ export default function HomePageTopSlider() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className={styles.sliderBox}>
-                        <img
-                            src="/homepagetopsliderImg.svg"
-                            alt="homepagetopsliderImg"
-                        />
+                        <div className={styles.sliderBoxImgContainer}>
+                            <Image
+                                layout="fill"
+                                src="/homepagetopsliderImg.svg"
+                                alt="homepagetopsliderImg"
+
+                            />
+                        </div>
                         <div className={styles.sliderTexts}>
                             <p className={styles.mainTitle}>Lorem Ipsum dolor</p>
                             <p className={styles.subTitle}>Lorem Ipsum dolor</p>
@@ -50,10 +57,14 @@ export default function HomePageTopSlider() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className={styles.sliderBox}>
-                        <img
-                            src="/homepagetopsliderImg.svg"
-                            alt="homepagetopsliderImg"
-                        />
+                        <div className={styles.sliderBoxImgContainer}>
+                            <Image
+                                layout="fill"
+                                src="/homepagetopsliderImg.svg"
+                                alt="homepagetopsliderImg"
+
+                            />
+                        </div>
                         <div className={styles.sliderTexts}>
                             <p className={styles.mainTitle}>Lorem Ipsum dolor</p>
                             <p className={styles.subTitle}>Lorem Ipsum dolor</p>
@@ -64,10 +75,14 @@ export default function HomePageTopSlider() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className={styles.sliderBox}>
-                        <img
-                            src="/homepagetopsliderImg.svg"
-                            alt="homepagetopsliderImg"
-                        />
+                        <div className={styles.sliderBoxImgContainer}>
+                            <Image
+                                layout="fill"
+                                src="/homepagetopsliderImg.svg"
+                                alt="homepagetopsliderImg"
+
+                            />
+                        </div>
                         <div className={styles.sliderTexts}>
                             <p className={styles.mainTitle}>Lorem Ipsum dolor</p>
                             <p className={styles.subTitle}>Lorem Ipsum dolor</p>

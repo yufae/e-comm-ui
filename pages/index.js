@@ -12,7 +12,6 @@ export default function Home() {
     <Layout>
       <Head>
         <title>Anasayfa</title>
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <>
