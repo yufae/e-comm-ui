@@ -1,4 +1,4 @@
-import React from 'react'
+import { useState } from 'react'
 import styles from '../styles/HomePageTopSlider.module.css'
 import Image from 'next/image'
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
@@ -12,6 +12,9 @@ import 'swiper/swiper-bundle.css';
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
 export default function HomePageTopSlider() {
+
+    const [imgLoadHandle, setImgLoadHandle] = useState(false)
+
     return (
         <div className={styles.sliderWrapper}>
             <Swiper
@@ -27,7 +30,11 @@ export default function HomePageTopSlider() {
                                 layout="fill"
                                 src="/homepagetopsliderImg.svg"
                                 alt="homepagetopsliderImg"
+                                onLoad={() => setImgLoadHandle(true)}
                             />
+                            {imgLoadHandle ? null :
+                                <div className="loader"></div>
+                            }
                         </div>
                         <div className={styles.sliderTexts}>
                             <p className={styles.mainTitle}>Lorem Ipsum dolor</p>

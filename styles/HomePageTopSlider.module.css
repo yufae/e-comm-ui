@@ -18,6 +18,20 @@
   height: 770px;
 }
 
+.sliderBoxImgContainer img {
+  animation-name: imgAnimation;
+  animation-duration: 1s;
+}
+
+@keyframes imgAnimation {
+  from {
+    filter: blur(2px);
+  }
+  to {
+    filter: blur(0px);
+  }
+}
+
 .sliderTexts {
   position: absolute;
   z-index: 2;
